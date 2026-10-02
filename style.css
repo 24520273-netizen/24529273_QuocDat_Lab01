@@ -128,3 +128,50 @@ body {
 .card-footer a {
     color: var(--accent);
 }
+#contact {
+    padding: 2rem 0;
+}
+
+#contact-form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin-top: 1rem;
+}
+
+#contact-form label {
+    font-weight: 600;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font: inherit;
+    color: var(--text-primary);
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form button {
+    width: fit-content;
+    padding: 0.75rem 1.25rem;
+    font: inherit;
+    cursor: pointer;
+    color: var(--text-primary);
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus,
+#contact-form button:focus {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+}
