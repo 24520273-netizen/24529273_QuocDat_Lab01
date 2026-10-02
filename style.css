@@ -104,3 +104,27 @@ body {
     border-radius: 999px;
     background: var(--bg-primary);
 }
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    background: var(--bg-primary);
+    font-size: 0.875rem;
+}
+
+.card-footer {
+    margin-top: 1rem;
+}
+
+.card-footer a {
+    color: var(--accent);
+}
