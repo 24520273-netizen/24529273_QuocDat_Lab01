@@ -44,15 +44,16 @@
     <main id="main-content" role="main">
         <main id="main-content" role="main">
 
-    <section id="resilient-component" aria-labelledby="component-title">
-        <h2 id="component-title">Latest Activity</h2>
+   <section id="resilient-component" aria-labelledby="component-title">
+    <h2 id="component-title">Latest Activity</h2>
 
-        <section class="loading-state" aria-label="Loading content">
-            <article class="skeleton-item"></article>
-            <article class="skeleton-item"></article>
-            <article class="skeleton-item"></article>
-        </section>
-          <section class="live-state" aria-label="Live activity">
+    <section class="loading-state" aria-label="Loading content" hidden>
+        <article class="skeleton-item"></article>
+        <article class="skeleton-item"></article>
+        <article class="skeleton-item"></article>
+    </section>
+
+    <section class="live-state" aria-label="Live activity" hidden>
         <header class="live-metadata">
             <span class="metadata-badge">Live</span>
             <span class="metadata-badge">3 Projects</span>
@@ -74,8 +75,22 @@
                 <h3>AI Application</h3>
                 <p>Machine learning powered application.</p>
             </article>
+        </section>
+
+    </section> 
+
+    <section class="empty-state" aria-label="No activity available" hidden>
+        <h3>No activity yet</h3>
+        <p>There is currently no activity to display.</p>
     </section>
-      </section>
+    <section class="error-state" role="alert">
+    <h3>Unable to load activity</h3>
+    <p>Something went wrong while loading the data.</p>
+
+    <button type="button" class="retry-button">
+        Retry
+    </button>
+</section>
 </section>
 
     <section id="skills">
@@ -185,5 +200,6 @@
 
 <script src="theme-toggle.js"></script>
 <script src="contact-form.js"></script>
+<script src="component-state.js"></script>
 </body>
 </html>
