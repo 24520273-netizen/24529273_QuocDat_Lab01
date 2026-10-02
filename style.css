@@ -206,3 +206,36 @@ body {
         background-position: -200% 0;
     }
 }
+.live-state {
+    margin-top: 1.5rem;
+}
+
+.live-metadata {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.metadata-badge {
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    background: var(--card-bg);
+}
+.live-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.live-item {
+    padding: 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.live-item h3 {
+    margin-bottom: 0.5rem;
+}
